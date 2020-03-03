@@ -1,10 +1,8 @@
 /** 
 * Fizz Buzz Algorithm 
-* @vrsion 3.0.0
+* @version 3.0.0
 * @author Bhoyee
 * @license MIT
-
-*
 */
 
 // fizzbuzz function 
