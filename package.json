@@ -1,0 +1,22 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhoyee/fizzbuzz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhoyee/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/bhoyee/fizzbuzz#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}

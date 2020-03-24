@@ -1,15 +1,15 @@
 /** 
 * Fizz Buzz Algorithm 
-* @version 3.0.0
+* @version 1.0.0
 * @author Bhoyee
 * @license MIT
 */
 
 // fizzbuzz function 
-function fizzbuzz(num) {
+module.exports.fizzbuzz = function(num) {
  
      //Check for number
-     if(isNaN(num) || num === "") console.log("Enter a number");
+     if(typeof num !== 'number') throw new Error("Enter a number");
      //loop from 1 to num
         for (let i = 1; i <= num; i++) {
             //check if number is divisible by both 3 and 5 

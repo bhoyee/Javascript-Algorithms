@@ -1,4 +1,7 @@
-# Fizz Buzz Algorithm
+# Fizz Buzz Algorithm with Test 
+
+ ####  Dependencies For Testing : !
+ > - Jest Module ***npm i jest --save-dev*** 
 
 > ####  Fizz Buzz Algorithm Operate in the following way: !
 >
