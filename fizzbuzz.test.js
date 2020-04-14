@@ -1,5 +1,5 @@
 
-const app = require('./app');
+const app = require('./fizzbuzz');
 
 describe('fizzbuzz', () => {
 

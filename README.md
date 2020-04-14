@@ -1,18 +1,21 @@
-# Fizz Buzz Algorithm with Test 
+# Javacript Algorithm with Test 
 
  ####  Dependencies For Testing : !
  > - Jest Module ***npm i jest --save-dev*** 
 
-> ####  Fizz Buzz Algorithm Operate in the following way: !
+> ####  Core Algorithms I will work om : !
 >
-> - A function ***fizzbuzz(num)*** takes number as parameter called num.
+> - Fizzbuzz
 
-> -  The function will display to console every number from 1 to num. 
->  **example**: if you pass 20 to the function, it will display 1 - 20 to the console.
+> - Binary Search
 
-> -  If the number is divisible by 3, it will display **fizz** instead of the number.
+> - Fibonacci and Memoised Fibonacci 
 
-> -  If number is divisible by 5, it will display **buzz** and  if it’s divisible by both 3 and 5 it will display **FizzBuzz** .
+> - Merge sort and Bubble Sort
+
+> - Caesar Cipher
+
+> - Sieve of Eratosthenes.
 
 License
 ----
