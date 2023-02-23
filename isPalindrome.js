@@ -14,7 +14,7 @@ any punctuation chatacters like apostrophe, commas etc
 */
 
 function isPalindrome(string) {
-    
+
     //turn every letter in string to lowercase
     string = string.toLowerCase();
 
@@ -29,7 +29,9 @@ function isPalindrome(string) {
 
     charactersArr.forEach(char => {
         if(validCharacters.indexOf(char) > -1) lettersArr.push(char);
+        console.log('test ' + char);
     });
+   // console.log('res '+ lettersArr);
 
     //compare if lettersArr are the same both backward and farward
     if(lettersArr.join('') === lettersArr.reverse().join('')) return true;

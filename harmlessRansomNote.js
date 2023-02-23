@@ -1,22 +1,38 @@
 
-//let assume noteTest and magazineTest are lowercase with no punctuation
-function harmlessRansomeNote (noteTest, magazineText) {
 
+function harmlessRansomeNote (noteTest, magazineText) {
+    //turn noteTest & magazineText to lowercase
+    noteTest = noteTest.toLowerCase();
+    magazineText = magazineText.toLowerCase();
+    
     //convert the parameters to array
-    let noteArr = noteTest.split(' ');
-    let magazineArr = magazineText.split(' ');
+    let noteArr = noteTest.split('');
+    let magazineArr = magazineText.split('');
+   
+    //make array of any character that will be allow in our string
+    let validCharacters = 'abcdefghijklmnopqrstuvwz'.split('');
+
+    let newNoteArr = [];
+    noteArr.forEach(char => {
+        if(validCharacters.indexOf(char) > -1) newNoteArr.push(char);
+       });
+      
+    let newMagazineArr = [];
+    magazineArr.forEach(magazine => {
+        if(validCharacters.indexOf(magazine) > -1) newMagazineArr.push(magazine);
+    });
+    
     let magazineObj = {};
 
-    magazineArr.forEach( word => {
+    newMagazineArr.forEach( word => {
         if (!magazineObj[word]) magazineObj[word] = 0;
         magazineObj[word]++;
     });
 
-    console.log(magazineObj);
-
+ 
     //check if neccessary words available 
     let noteIsPossible = true;
-    noteArr.forEach(word => {
+    newNoteArr.forEach(word => {
         if (magazineObj[word]) {
             magazineObj[word]--;
             if(magazineObj[word] < 0 ) noteIsPossible = false;
@@ -29,4 +45,4 @@ function harmlessRansomeNote (noteTest, magazineText) {
     return noteIsPossible;
 }
 
-harmlessRansomeNote('simple test', 'this i just a simple test');
+console.log(harmlessRansomeNote('simple testz', 'this is just a SIMPLE,.,  We good to go ,z right'));
