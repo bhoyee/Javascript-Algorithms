@@ -19,3 +19,20 @@ function factorial(num){
 }
 
 factorial(6)
+
+//working on  binary search 
+function binarySearch(numArray, key) {
+    var middleIndex = Math.floor(numArray.length / 2);
+    var middleElement = numArray[middleIndex];
+
+    if (middleElement === key) return true;
+    else if (middleElement < key && numArray.length > 1) {
+        return binarySearch(numArray.splice(middleIndex, numArray.length), key);
+    }
+    else if (middleElement > key && numArray.length > 1) {
+        return binarySearch(numArray.splice(0, middleIndex), key);
+    }
+    else return false;
+}
+
+binarySearch([3,5,8,9,12,15,78,99,102,107], 99);
