@@ -75,3 +75,11 @@ function getMode(array) {
 
     
 }
+
+//testing the code 
+meanMedianMode([1, 2, 3, 4, 5, 6, 1]);
+
+// expected result 
+// mean = 3.24
+//median = 3.5
+//mode = 1, 4
